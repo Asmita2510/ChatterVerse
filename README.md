@@ -1,26 +1,63 @@
-# To install the dependecies for the 1st time:
-1. go the the server folder - ```cd server```
-2. Install dependencies - ```npm i```
 
-# Create a file '.env' in the server folder ([server/.env]) and the following:
-TOKEN_SECRET='Insert your key'\
-SMTP_API_KEY='Insert your key'\
-DB_NAME='chat_app'\
-DB_USER='root'\
-DB_PASSWORD='user'\
-DB_HOST='localhost'
+# ChatterVerse
 
- The part below this is not mandatory in the .env file unless you are using S3 bucket to upload the chat images 
- This project has both the metods, storing images locally as well as on the bucket, code for storing in bucket has been commented in middlewares/multer.js and controllers/message.js 
-##
-BUCKET_NAME='Your S3 bucket name'
-##
-IAM_USER_KEY='Your IAM user key'
-##
-IAM_USER_SECRET='Your IAM user secret'
+Group Chat Application using Node.js
 
 
-# To run the project:
-1. ```cd server```
-2. Start the application - ```npm start```
-3. In your browser - http://localhost:3000/login
+
+## Installation
+
+Install my-project with npm
+
+```bash
+  cd server
+  npm i
+```
+    
+## Environment Variables
+
+To run this project, you will need to add the following environment variables to your .env file inside the server folder.
+
+`TOKEN_SECRET`='Insert your key'\
+`SMTP_API_KEY`='Insert your key'\
+`DB_NAME`='chat_app'\
+`DB_USER`='your db isntance username'\
+`DB_PASSWORD`='your db instance password'\
+`DB_HOST`='localhost or your hostname'
+
+This is mandatory only if uing S3 bucket to store chat images
+`BUCKET_NAME`='Your S3 bucket name'\
+`IAM_USER_KEY`='Your IAM user key'\
+`IAM_USER_SECRET`='Your IAM user secret'
+
+## Run Locally
+
+Clone the project
+
+```bash
+  git clone git@github.com:Asmita2510/ChatterVerse.git
+```
+
+Go to the project directory
+
+```bash
+  cd ChatterVerse
+```
+
+Install dependencies
+
+```bash
+  cd server
+  npm install
+```
+
+Start the server
+
+```bash
+  npm run start
+```
+
+In your browser : http://localhost:3000/login
+
+
+
