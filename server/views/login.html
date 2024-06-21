@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <meta http-equiv="Content-Security-Policy" content="script-src 'self' https://cdn.jsdelivr.net/npm/"> -->
+    <title>Login Page</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+
+<body>
+    <h1>Group Chat</h1>
+    <section class="container">
+        <div class="login-container">
+            <div class="circle circle-one"></div>
+            <div class="form-container">
+                <img src="https://raw.githubusercontent.com/hicodersofficial/glassmorphism-login-form/master/assets/illustration.png"
+                    alt="illustration" class="illustration" />
+                <h1 class="opacity">LOGIN</h1>
+                <form action="" class="sign-in-form" id="signInForm">
+                    <input id="email" type="text" placeholder="EMAIL" required />
+                    <input id="password" type="password" placeholder="PASSWORD" required />
+                    <button type="submit" id="login-btn" class="opacity">LOGIN</button>
+                </form>
+                <div class="register-forget opacity">
+                    <a href="./signup">REGISTER</a>
+                    <a href="">FORGOT PASSWORD</a>
+                </div>
+                <p id="errormsg"></p>
+            </div>
+            <div class="circle circle-two"></div>
+        </div>
+        <div class="theme-btn-container"></div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="login.js"></script>
+
+</body>
+
+</html>

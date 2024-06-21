@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <meta http-equiv="Content-Security-Policy" content="script-src 'self' https://cdn.jsdelivr.net/npm/"> -->
+    <title>SignUp Page</title>
+    <link rel="stylesheet" href="signup.css">
+</head>
+
+<body>
+    <h1>Group Chat</h1>
+    <section class="container">
+        <div class="login-container">
+            <div class="circle circle-one"></div>
+            <div class="form-container">
+                <img src="https://raw.githubusercontent.com/hicodersofficial/glassmorphism-login-form/master/assets/illustration.png"
+                    alt="illustration" class="illustration" />
+                <h1 class="opacity">SIGN UP</h1>
+                <form action="" class="sign-up-form" id="signUpForm">
+                    <input id="name" type="text" placeholder="NAME" required />
+                    <input id="email" type="email" placeholder="EMAIL" required />
+                    <input id="phone" type="tel" placeholder="PHONE NUMBER" required />
+                    <input id="password" type="password" placeholder="PASSWORD"required />
+                    <button id="signup-btn" type="submit" class="opacity">SIGN UP</button>
+                </form>
+                <div class="register-forget opacity">
+                    <p>Already a User? <u><a href="login">Login Instead</a></u></p>
+
+                </div>
+                <p id="errormsg"></p>
+            </div>
+            <div class="circle circle-two"></div>
+        </div>
+        <div class="theme-btn-container"></div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="signup.js"></script>
+</body>
+
+</html>
