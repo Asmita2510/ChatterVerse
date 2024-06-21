@@ -25,7 +25,8 @@ To run this project, you will need to add the following environment variables to
 `DB_PASSWORD`='your db instance password'\
 `DB_HOST`='localhost or your hostname'
 
-This is mandatory only if uing S3 bucket to store chat images
+This is mandatory only if using S3 bucket to store chat images
+
 `BUCKET_NAME`='Your S3 bucket name'\
 `IAM_USER_KEY`='Your IAM user key'\
 `IAM_USER_SECRET`='Your IAM user secret'
