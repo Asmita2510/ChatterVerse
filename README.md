@@ -8,10 +8,10 @@ SMTP_API_KEY='Insert your key'\
 DB_NAME='chat_app'\
 DB_USER='root'\
 DB_PASSWORD='user'\
-DB_HOST='localhost'\
+DB_HOST='localhost'
 
  The part below this is not mandatory in the .env file unless you are using S3 bucket to upload the chat images 
- This project has both the metods, storing images locally as well as on the bucket, code for storing in bucket has been commented in middlewares/multer.js and controllers/message.js \
+ This project has both the metods, storing images locally as well as on the bucket, code for storing in bucket has been commented in middlewares/multer.js and controllers/message.js 
 
 BUCKET_NAME='Your S3 bucket name'\ 
 IAM_USER_KEY='Your IAM user key'\
